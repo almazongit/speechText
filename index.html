@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech=>text</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <p class="header">Речь в текст</p>
+        <div class="settings">
+            <div class="language">
+                <p>Язык</p>
+                <select name="" id="language"></select>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <button class="btn record">
+            <div class="icon">
+                <i class="bx bx-microphone"></i>
+                <i class="bx bx-loader bx-spin"></i>
+            </div>
+            <p>Начать прослушивание</p>
+        </button>
+
+        <p>Результат</p>
+        <div class="result" spellcheck="false">
+            <p class="resultText"></p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="buttons">
+            <button class="btn clear">Отчистка</button>
+            <button class="btn download">Загрузка</button>
+        </div>
+    </div>
+
+    <script src="language.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
